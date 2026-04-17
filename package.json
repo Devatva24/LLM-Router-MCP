@@ -1,6 +1,6 @@
 {
   "name": "llm-router-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server that routes prompts across Claude, Gemini, and GPT-4o to minimise token cost",
   "main": "dist/index.js",
   "bin": {
