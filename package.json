@@ -26,6 +26,10 @@
     "llm-router-mcp": "^1.0.0",
     "openai": "^4.52.0"
   },
+  "homepage": "https://github.com/Devatva24/LLM-Router-MCP#readme",
+  "bugs": {
+    "url": "https://github.com/Devatva24/LLM-Router-MCP/issues"
+  },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "typescript": "^5.0.0"
@@ -36,9 +40,12 @@
     "claude",
     "gemini",
     "gpt4o",
+    "anthropic",
     "ai-router",
     "prompt-routing",
-    "anthropic"
+    "llm-orchestration",
+    "multi-llm",
+    "cost-optimization"
   ],
   "author": "Devatva24",
   "license": "MIT",
