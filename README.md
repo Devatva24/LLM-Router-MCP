@@ -2,6 +2,7 @@
 
 > **Route prompts intelligently across Claude, Gemini, and GPT-4o — automatically picking the best model for every task while minimising token cost.**
 
+[![npm version](https://img.shields.io/npm/v/llm-router-mcp.svg)](https://www.npmjs.com/package/llm-router-mcp)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![MCP](https://img.shields.io/badge/MCP-SDK%201.x-blueviolet?style=flat-square)](https://modelcontextprotocol.io/)
 [![Node.js](https://img.shields.io/badge/Node.js-20%2B-339933?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
