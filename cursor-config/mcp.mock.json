@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "llm-router": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/llm-router/dist/index.js"],
+      "env": {
+        "MOCK_MODE": "true",
+        "ANTHROPIC_API_KEY": "mock-not-needed",
+        "GEMINI_API_KEY": "mock-not-needed",
+        "OPENAI_API_KEY": "mock-not-needed"
+      }
+    }
+  }
+}

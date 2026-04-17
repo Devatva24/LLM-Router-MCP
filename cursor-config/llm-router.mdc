@@ -1,0 +1,30 @@
+# LLM Router — Cursor Rules
+# Place this file at: .cursor/rules/llm-router.mdc
+# It tells Cursor's agent when to automatically invoke each MCP tool.
+
+## Auto-routing rules
+
+When the user asks about architecture, system design, project structure, or
+"how should I build X", ALWAYS use the `plan_workflow` MCP tool first.
+
+When the user asks to write complex logic, algorithms, refactor code, debug
+something tricky, or review/explain code, use `generate_code`.
+
+When the user asks to implement a feature, add an endpoint, write tests,
+or do repetitive coding tasks, use `implement_feature`.
+
+When the task is ambiguous, use `route_prompt` and let the router decide.
+
+After completing a task with one tool, you MAY chain to another:
+  e.g. plan_workflow → generate_code → implement_feature
+
+Use `clear_context` when the user starts a completely new, unrelated task.
+
+## Session IDs
+Use a consistent session_id per conversation to preserve context.
+A good default: use the current file name or feature name as session_id.
+Example: session_id="auth-module" or session_id="checkout-flow"
+
+## Token-saving reminders
+- Do NOT repeat large code blocks back to the user when confirming.
+- Summarise what was generated, then show only the changed sections.

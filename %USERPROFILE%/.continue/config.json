@@ -1,0 +1,23 @@
+{
+  "models": [
+    {
+      "title": "LLM Router (Mock)",
+      "provider": "anthropic",
+      "model": "claude-haiku-20240307",
+      "apiKey": "mock-key"
+    }
+  ],
+  "mcpServers": [
+    {
+      "name": "llm-router",
+      "command": "node",
+      "args": ["C:\\Users\\KIIT\\Desktop\\llm-router\\dist\\index.js"],
+      "env": {
+        "MOCK_MODE": "true",
+        "ANTHROPIC_API_KEY": "mock",
+        "GEMINI_API_KEY": "mock",
+        "OPENAI_API_KEY": "mock"
+      }
+    }
+  ]
+}

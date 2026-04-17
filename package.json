@@ -1,0 +1,52 @@
+{
+  "name": "llm-router-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that routes prompts across Claude, Gemini, and GPT-4o to minimise token cost",
+  "main": "dist/index.js",
+  "bin": {
+    "llm-router-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "start:mock": "cross-env MOCK_MODE=true node dist/index.js",
+    "dev": "npx ts-node src/index.ts",
+    "test": "node test-router.cjs",
+    "prepare": "npx tsc"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "@google/generative-ai": "^0.15.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "llm-router-mcp": "^1.0.0",
+    "openai": "^4.52.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "llm",
+    "claude",
+    "gemini",
+    "gpt4o",
+    "ai-router",
+    "prompt-routing",
+    "anthropic"
+  ],
+  "author": "Devatva24",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Devatva24/LLM-Router-MCP"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
